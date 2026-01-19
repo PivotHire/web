@@ -35,9 +35,9 @@ export default function Navbar() {
                     <Link href="#about" className="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-300 dark:hover:text-white transition-colors">
                         About
                     </Link>
-                    <Link href="#projects" className="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-300 dark:hover:text-white transition-colors">
+                    {/* <Link href="#projects" className="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-300 dark:hover:text-white transition-colors">
                         Projects
-                    </Link>
+                    </Link> */}
                     <Link href="#contact" className="text-sm font-medium text-zinc-600 hover:text-black dark:text-zinc-300 dark:hover:text-white transition-colors">
                         Contact
                     </Link>
