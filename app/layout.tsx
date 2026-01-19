@@ -15,6 +15,28 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "PivotHire - Accelerate Your Growth with AI-Powered Outsourcing",
   description: "PivotHire connects you with top-tier engineering talent to build scalable, high-performance software solutions. We bridge the gap between your vision and reality.",
+  openGraph: {
+    title: "PivotHire - Accelerate Your Growth with AI-Powered Outsourcing",
+    description: "PivotHire connects you with top-tier engineering talent to build scalable, high-performance software solutions.",
+    url: "https://www.pivothire.tech",
+    siteName: "PivotHire",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "PivotHire - AI-Powered Outsourcing",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PivotHire - Accelerate Your Growth with AI-Powered Outsourcing",
+    description: "PivotHire connects you with top-tier engineering talent to build scalable, high-performance software solutions.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
