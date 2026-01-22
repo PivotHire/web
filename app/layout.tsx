@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "PivotHire - Accelerate Your Growth with AI-Powered Outsourcing",
-  description: "PivotHire connects you with top-tier engineering talent to build scalable, high-performance software solutions. We bridge the gap between your vision and reality.",
+  description: "The fastest and easiest way to go from idea to product. PivotHire connects you with top-tier engineering talent to build scalable, high-performance software solutions. We bridge the gap between your vision and reality.",
   openGraph: {
     title: "PivotHire - Accelerate Your Growth with AI-Powered Outsourcing",
-    description: "PivotHire connects you with top-tier engineering talent to build scalable, high-performance software solutions.",
+    description: "The fastest and easiest way to go from idea to product. PivotHire connects you with top-tier engineering talent to build scalable, high-performance software solutions. We bridge the gap between your vision and reality.",
     url: "https://www.pivothire.tech",
     siteName: "PivotHire",
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "PivotHire - Accelerate Your Growth with AI-Powered Outsourcing",
-    description: "PivotHire connects you with top-tier engineering talent to build scalable, high-performance software solutions.",
+    description: "The fastest and easiest way to go from idea to product. PivotHire connects you with top-tier engineering talent to build scalable, high-performance software solutions. We bridge the gap between your vision and reality.",
     images: ["/og-image.png"],
   },
 };
