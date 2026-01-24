@@ -44,7 +44,7 @@ export default function Hero() {
                                 <div className="text-sm text-zinc-500 dark:text-zinc-400">Satisfaction</div>
                             </div>
                             <div>
-                                <div className="text-3xl font-bold dark:text-white">3+</div>
+                                <div className="text-3xl font-bold dark:text-white">5+</div>
                                 <div className="text-sm text-zinc-500 dark:text-zinc-400">Countries</div>
                             </div>
                         </div>
