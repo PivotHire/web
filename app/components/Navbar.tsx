@@ -1,40 +1,15 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { IoMenu, IoSearch } from "react-icons/io5";
-import { useState, useEffect } from "react";
 
 export default function Navbar() {
-    const [isHidden, setIsHidden] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const footerCard = document.getElementById('bottom-card');
-            if (footerCard) {
-                const rect = footerCard.getBoundingClientRect();
-                // Check if the top of the black card is visible in the viewport
-                if (rect.top <= window.innerHeight) {
-                    setIsHidden(true);
-                } else {
-                    setIsHidden(false);
-                }
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll, { passive: true });
-        handleScroll(); // Initial check
-
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     return (
-        <div className={`fixed top-4 left-0 right-0 z-50 container mx-auto px-4 transition-transform duration-500 ease-in-out ${isHidden ? '-translate-y-[150%]' : 'translate-y-0'}`}>
-            <nav className="w-full bg-white/60 backdrop-blur-2xl shadow-sm border border-white/40 rounded-3xl">
-                <div className="px-4 md:px-6 h-16 flex items-center justify-between">
+        <div className="fixed top-4 left-0 right-0 z-50 mx-4 lg:mx-8 transition-all">
+            <nav className="w-full bg-white/60 backdrop-blur-2xl shadow-sm border border-white/40 rounded-[2rem]">
+                <div className="pl-6 pr-4 h-[4rem] flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <div className="relative w-36 h-12">
+                        <div className="relative w-40 h-12">
                             <Image
                                 src="/logo-light-transparent.png" alt="PivotHire Logo" fill
                                 className="object-contain" />
