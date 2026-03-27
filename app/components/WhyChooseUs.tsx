@@ -3,7 +3,7 @@ import Image from"next/image";
 
 export default function WhyChooseUs() {
  return (
- <section className="py-24 bg-zinc-50">
+ <section className="py-24 bg-white">
  <div className="container mx-auto px-4">
  <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
 
@@ -17,23 +17,23 @@ export default function WhyChooseUs() {
  </p>
 
  <div className="grid gap-6 sm:grid-cols-2">
- <div className="rounded-2xl bg-white p-6 shadow-sm">
- <FaRobot className="h-8 w-8 text-[#242424] mb-4"/>
+ <div className="rounded-3xl border border-zinc-200 bg-zinc-50/50 p-8 transition-colors hover:bg-zinc-100">
+ <FaRobot className="h-8 w-8 text-black mb-4"/>
  <h3 className="font-semibold text-lg text-zinc-900 mb-2">Intelligent Central AI Agent</h3>
  <p className="text-sm text-zinc-500">Our AI agent analyzes project requirements and team capabilities to ensure optimal, data-driven pairings for successful delivery.</p>
  </div>
- <div className="rounded-2xl bg-white p-6 shadow-sm">
- <FaCheckCircle className="h-8 w-8 text-[#242424] mb-4"/>
+ <div className="rounded-3xl border border-zinc-200 bg-zinc-50/50 p-8 transition-colors hover:bg-zinc-100">
+ <FaCheckCircle className="h-8 w-8 text-black mb-4"/>
  <h3 className="font-semibold text-lg text-zinc-900 mb-2">Verified & Vetted Ecosystem</h3>
  <p className="text-sm text-zinc-500">We conduct rigorous legal verification for clients and multi-stage skill assessments for our delivery partners, creating a high-trust marketplace.</p>
  </div>
- <div className="rounded-2xl bg-white p-6 shadow-sm">
- <FaVoteYea className="h-8 w-8 text-[#242424] mb-4"/>
+ <div className="rounded-3xl border border-zinc-200 bg-zinc-50/50 p-8 transition-colors hover:bg-zinc-100">
+ <FaVoteYea className="h-8 w-8 text-black mb-4"/>
  <h3 className="font-semibold text-lg text-zinc-900 mb-2">Ironclad IP Protection</h3>
  <p className="text-sm text-zinc-500">The platform manages binding legal agreements for immutable records, safeguarding your intellectual property.</p>
  </div>
- <div className="rounded-2xl bg-white p-6 shadow-sm">
- <FaGlobe className="h-8 w-8 text-[#242424] mb-4"/>
+ <div className="rounded-3xl border border-zinc-200 bg-zinc-50/50 p-8 transition-colors hover:bg-zinc-100">
+ <FaGlobe className="h-8 w-8 text-black mb-4"/>
  <h3 className="font-semibold text-lg text-zinc-900 mb-2">Borderless Collaboration</h3>
  <p className="text-sm text-zinc-500">Our platform is built for versatility, enabling seamless, project-based work across any industry, role, or region to power global innovation.</p>
  </div>

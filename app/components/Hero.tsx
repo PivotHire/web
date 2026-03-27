@@ -8,7 +8,7 @@ export default function Hero() {
                 <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
                     {/* Content */}
                     <div className="flex flex-col justify-center space-y-8">
-                        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-zinc-900">
+                        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl/none text-zinc-900">
                             Complex Projects, <br />Simply Delivered.
                         </h1>
                         <p className="max-w-[600px] text-zinc-500 md:text-xl">
@@ -16,11 +16,11 @@ export default function Hero() {
                         </p>
                         <div className="flex flex-col gap-4 min-[400px]:flex-row">
                             <a
-                                href="mailto:core@pivothire.tech" className="inline-flex h-12 items-center justify-center rounded-full bg-[#242424] px-8 text-sm font-medium text-white shadow transition-colors hover:bg-[#333] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring :bg-zinc-200">
+                                href="mailto:core@pivothire.tech" className="inline-flex h-12 items-center justify-center rounded-full bg-black px-8 text-sm font-medium text-white transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
                                 Get Started
                             </a>
                             <a
-                                href="mailto:core@pivothire.tech" className="inline-flex h-12 items-center justify-center rounded-full border border-zinc-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring :bg-zinc-800 :text-white">
+                                href="mailto:core@pivothire.tech" className="inline-flex h-12 items-center justify-center rounded-full border border-zinc-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-50 hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
                                 Learn More <FaArrowRight className="ml-2 h-4 w-4" />
                             </a>
                         </div>
