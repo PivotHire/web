@@ -18,14 +18,14 @@ export default function Home() {
             {/* <Projects /> */}
             {/* <Testimonials /> */}
             <div className="bg-white pt-4">
-                <div className="bg-[#242424] text-white rounded-t-[2.5rem] mx-4 lg:mx-8">
+                <div id="bottom-card" className="bg-[#242424] text-white rounded-t-[2.5rem] mx-4 lg:mx-8">
                     <section className="container mx-auto px-4 py-20 text-center">
                         <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl mb-6">
                             Let's Create Your Ideal Software Solution
                         </h2>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
-                                href="mailto:core@pivothire.tech" className="inline-flex h-12 items-center justify-center rounded-full bg-white px-8 text-sm font-medium text-black transition-opacity hover:opacity-90">
+                                href="https://app.pivothire.tech" className="inline-flex h-12 items-center justify-center rounded-full bg-white px-8 text-sm font-medium text-black transition-opacity hover:opacity-90">
                                 Start Your Project
                             </a>
                             <a
