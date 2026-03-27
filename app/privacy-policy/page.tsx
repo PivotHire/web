@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
                     <ul>
                         <li><p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p></li>
                         <li><p><strong>Affiliate</strong> means an entity that controls, is controlled by, or is under common control with a party.</p></li>
-                        <li><p><strong>Application</strong> refers to PivotHire, the software program provided by the Company.</p></li>
+                        <li><p><strong>Application</strong> refers to PivotHire, the platform provided by the Company.</p></li>
                         <li><p><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Privacy Policy) refers to PivotHire Inc.</p></li>
                         <li><p><strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website.</p></li>
                         <li><p><strong>Country</strong> refers to: United States.</p></li>

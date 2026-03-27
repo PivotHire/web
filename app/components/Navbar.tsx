@@ -39,7 +39,7 @@ export default function Navbar({ mode = "default" }: { mode?: "default" | "legal
                                 <Link href="/privacy-policy" className="text-sm font-medium text-zinc-600 hover:text-black :text-white transition-colors">
                                     Privacy Policy
                                 </Link>
-                                <Link href="/tos" className="text-sm font-medium text-zinc-600 hover:text-black :text-white transition-colors">
+                                <Link href="/terms-of-service" className="text-sm font-medium text-zinc-600 hover:text-black :text-white transition-colors">
                                     Terms of Service
                                 </Link>
                             </>
