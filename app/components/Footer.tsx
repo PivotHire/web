@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <footer id="contact" className="bg-transparent text-white pt-16 pb-12">
             <div className="container mx-auto px-4 md:px-8">
-                <div className="grid gap-12 lg:grid-cols-4 mb-16">
+                <div className="grid gap-12 lg:grid-cols-3 mb-16">
                     {/* Brand */}
                     <div className="space-y-4">
                         <Link href="/" className="relative block w-48 h-12">
@@ -51,18 +51,6 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Newsletter */}
-                    <div>
-                        <h3 className="font-bold text-lg mb-6 text-white">Stay Updated</h3>
-                        <p className="text-zinc-400 mb-4">Subscribe to our newsletter for the latest tech trends.</p>
-                        <form className="flex gap-2">
-                            <input
-                                type="email" placeholder="Enter your email" className="flex-1 bg-white/10 border border-white/10 rounded-full px-4 text-sm text-white focus:outline-none focus:border-white/30" />
-                            <button className="bg-white text-black px-6 py-2 rounded-full text-sm font-medium transition-opacity hover:opacity-80">
-                                Subscribe
-                            </button>
-                        </form>
-                    </div>
                 </div>
 
                 <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-zinc-400">
