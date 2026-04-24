@@ -16,11 +16,11 @@ export default function Hero() {
                         </p>
                         <div className="flex flex-col gap-4 min-[400px]:flex-row">
                             <a
-                                href="mailto:core@pivothire.tech" className="inline-flex h-12 items-center justify-center rounded-full bg-black px-8 text-sm font-medium text-white transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+                                href="https://app.pivothire.tech" className="inline-flex h-12 items-center justify-center rounded-full bg-black px-8 text-sm font-medium text-white transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
                                 Get Started
                             </a>
                             <a
-                                href="mailto:core@pivothire.tech" className="inline-flex h-12 items-center justify-center rounded-full border border-zinc-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-50 hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+                                href="#about" className="inline-flex h-12 items-center justify-center rounded-full border border-zinc-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-50 hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
                                 Learn More <FaArrowRight className="ml-2 h-4 w-4" />
                             </a>
                         </div>

@@ -55,7 +55,7 @@ export default function About() {
  </div>
 
  <a
- href="#" className="inline-flex h-12 items-center justify-center rounded-full bg-black px-8 text-sm font-medium text-white transition-opacity hover:opacity-80">
+ href="#about" className="inline-flex h-12 items-center justify-center rounded-full bg-black px-8 text-sm font-medium text-white transition-opacity hover:opacity-80">
  Learn More About Us
  </a>
  </div>
