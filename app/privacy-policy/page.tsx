@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
             <div className="container mx-auto px-4 pt-32 pb-20 flex-grow w-full">
                 <div className="mx-auto space-y-4 text-zinc-700 leading-relaxed [&_h1]:text-4xl [&_h1]:font-bold [&_h1]:text-zinc-900 [&_h1]:mb-8 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-zinc-900 [&_h2]:mt-10 [&_h2]:mb-4 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-zinc-900 [&_h3]:mt-8 [&_h3]:mb-3 [&_h4]:text-lg [&_h4]:font-semibold [&_h4]:text-zinc-900 [&_h4]:mt-6 [&_h4]:mb-2 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1 [&_ul]:my-4 [&_p]:my-4 [&_li>p]:my-0 [&_a]:underline [&_a]:text-zinc-900 hover:[&_a]:text-zinc-700 [&_a]:transition-colors [&_strong]:text-zinc-900">
                     <h1>Privacy Policy</h1>
-                    <p>Last updated: April 13, 2026</p>
+                    <p>Last updated: April 25, 2026</p>
                     <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
                     <p>We use Your Personal Data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
 
@@ -76,7 +76,7 @@ export default function PrivacyPolicy() {
                     <p>The primary third-party processors We work with include:</p>
                     <ul>
                         <li><strong>Stripe:</strong> For payments, escrow routing, and identity verification. Their Privacy Policy can be viewed at <a href="https://stripe.com/privacy" target="_blank" rel="external nofollow noopener">https://stripe.com/privacy</a></li>
-                        <li><strong>Wise:</strong> For cross-border payouts and related verification. Their Privacy Policy can be viewed at <a href="https://wise.com/legal/privacy-policy" target="_blank" rel="external nofollow noopener">https://wise.com/legal/privacy-policy</a></li>
+                        <li><strong>Airwallex:</strong> For cross-border payouts and related verification. Their Privacy Policy can be viewed at <a href="https://www.airwallex.com/terms/privacy-policy" target="_blank" rel="external nofollow noopener">https://www.airwallex.com/terms/privacy-policy</a></li>
                         <li><strong>Dropbox Sign:</strong> For electronic contract and agreement execution. Their Privacy Policy can be viewed at <a href="https://www.dropbox.com/privacy" target="_blank" rel="external nofollow noopener">https://www.dropbox.com/privacy</a></li>
                         <li><strong>OpenAI:</strong> For AI-assisted resume parsing, codebase analysis, and matching. Their Privacy Policy can be viewed at <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="external nofollow noopener">https://openai.com/policies/privacy-policy</a></li>
                     </ul>
