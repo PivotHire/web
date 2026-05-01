@@ -27,29 +27,29 @@ export default function About() {
  You imagine, and we deliver your thoughts.
  </p>
  <p className="mb-8 text-lg text-zinc-500">
- We strive to provide low prices and ease of use, high trust through IP archiving, and worry-free project management driven by our AI agent.
+ Building software shouldn&apos;t slow you down. We exist so founders can stay focused on strategy, growth, and the problems only they can solve — while we turn their ideas into production-ready products.
  </p>
 
  <div className="space-y-4 mb-8">
  <div className="flex items-start gap-3">
  <FaCheckCircle className="h-6 w-6 text-[#242424] shrink-0"/>
  <div>
- <h4 className="font-semibold text-zinc-900">Low Price & Easy to Use</h4>
- <p className="text-sm text-zinc-500">Accessible services similar to an e-commerce experience.</p>
+ <h4 className="font-semibold text-zinc-900">Focus on what matters</h4>
+ <p className="text-sm text-zinc-500">Spend your time on product vision, customers, and growth — not managing developers or debugging deploys.</p>
  </div>
  </div>
  <div className="flex items-start gap-3">
  <FaCheckCircle className="h-6 w-6 text-[#242424] shrink-0"/>
  <div>
- <h4 className="font-semibold text-zinc-900">High Trust</h4>
- <p className="text-sm text-zinc-500">Results archiving for transparency.</p>
+ <h4 className="font-semibold text-zinc-900">From idea to product, fast</h4>
+ <p className="text-sm text-zinc-500">Our AI-powered workflow matches your project with the right talent and manages delivery end-to-end.</p>
  </div>
  </div>
  <div className="flex items-start gap-3">
  <FaCheckCircle className="h-6 w-6 text-[#242424] shrink-0"/>
  <div>
- <h4 className="font-semibold text-zinc-900">AI-Driven Management</h4>
- <p className="text-sm text-zinc-500">Pay once and wait for acceptance — we handle the rest.</p>
+ <h4 className="font-semibold text-zinc-900">Built on trust and transparency</h4>
+ <p className="text-sm text-zinc-500">Every deliverable is archived with immutable records. You always own your code, and you always know what&apos;s happening.</p>
  </div>
  </div>
  </div>
