@@ -155,9 +155,9 @@ export default function Services() {
     }, []);
 
     return (
-        <section id="services" ref={sectionRef} className="relative bg-white" style={{ height: "400vh" }}>
+        <section id="services" ref={sectionRef} className="relative bg-white lg:h-[400vh]">
             {/* Sticky container */}
-            <div className="sticky top-0 h-screen flex flex-col justify-center py-12">
+            <div className="lg:sticky lg:top-0 lg:h-screen flex flex-col justify-center py-12">
                 <div className="container mx-auto px-4">
                     {/* Header */}
                     <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-6">
