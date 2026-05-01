@@ -137,21 +137,28 @@ export default function Services() {
         const section = sectionRef.current;
         if (!section) return;
 
+        let raf = 0;
         const handleScroll = () => {
-            const rect = section.getBoundingClientRect();
-            const sectionHeight = section.offsetHeight;
-            const scrolled = -rect.top;
-            const scrollableDistance = sectionHeight - window.innerHeight;
+            cancelAnimationFrame(raf);
+            raf = requestAnimationFrame(() => {
+                const rect = section.getBoundingClientRect();
+                const sectionHeight = section.offsetHeight;
+                const scrolled = -rect.top;
+                const scrollableDistance = sectionHeight - window.innerHeight;
 
-            if (scrolled < 0 || scrolled > scrollableDistance) return;
+                if (scrolled < 0 || scrolled > scrollableDistance) return;
 
-            const progress = scrolled / scrollableDistance;
-            const newIndex = Math.min(3, Math.floor(progress * 4));
-            setActiveIndex(newIndex);
+                const progress = scrolled / scrollableDistance;
+                const newIndex = Math.min(services.length - 1, Math.floor(progress * services.length));
+                setActiveIndex(newIndex);
+            });
         };
 
         window.addEventListener("scroll", handleScroll, { passive: true });
-        return () => window.removeEventListener("scroll", handleScroll);
+        return () => {
+            cancelAnimationFrame(raf);
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, []);
 
     return (
