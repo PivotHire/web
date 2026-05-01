@@ -1,10 +1,8 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
-import About from "./components/About";
-import Projects from "./components/Projects";
+import LatestPosts from "./components/LatestPosts";
 import WhyChooseUs from "./components/WhyChooseUs";
-import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -13,15 +11,13 @@ export default function Home() {
             <Navbar />
             <Hero />
             <Services />
-            <About />
+            <LatestPosts />
             <WhyChooseUs />
-            {/* <Projects /> */}
-            {/* <Testimonials /> */}
             <div className="bg-white pt-4">
                 <div id="bottom-card" className="bg-[#242424] text-white rounded-t-[2.5rem] mx-4 lg:mx-8">
                     <section className="container mx-auto px-4 py-20 text-center">
                         <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl mb-6">
-                            Let's Create Your Ideal Software Solution
+                            Let&apos;s Create Your Ideal Software Solution
                         </h2>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
