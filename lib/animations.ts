@@ -1,7 +1,7 @@
 import { Variants } from "framer-motion";
 
 // Custom easing curve for a premium, smooth feel (Apple-like)
-export const premiumEasing = [0.16, 1, 0.3, 1];
+export const premiumEasing: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 // Standard fade in and slide up
 export const fadeInUp: Variants = {
@@ -54,8 +54,8 @@ export const floatingAnimation = {
         y: {
             duration: 4,
             repeat: Infinity,
-            repeatType: "reverse",
-            ease: "easeInOut",
+            repeatType: "reverse" as const,
+            ease: "easeInOut" as const,
         },
     },
 };
