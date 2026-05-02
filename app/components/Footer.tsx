@@ -35,8 +35,8 @@ export default function Footer() {
                     <div>
                         <h3 className="font-bold text-lg mb-6 text-white">Company</h3>
                         <ul className="space-y-4 text-zinc-400">
-                            <li><Link href="#about" className="hover:text-white transition-colors">About Us</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Careers</Link></li>
+                            <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+                            <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
                             <li><Link href="mailto:core@pivothire.tech" className="hover:text-white transition-colors">Contact</Link></li>
                         </ul>
                     </div>
@@ -44,10 +44,10 @@ export default function Footer() {
                     <div>
                         <h3 className="font-bold text-lg mb-6 text-white">Services</h3>
                         <ul className="space-y-4 text-zinc-400">
-                            <li><Link href="#services" className="hover:text-white transition-colors">Web Development</Link></li>
-                            <li><Link href="#services" className="hover:text-white transition-colors">Mobile Development</Link></li>
-                            <li><Link href="#services" className="hover:text-white transition-colors">Cloud Services</Link></li>
-                            <li><Link href="#services" className="hover:text-white transition-colors">Quality Assurance</Link></li>
+                            <li><Link href="https://app.pivothire.tech" className="hover:text-white transition-colors">Web Development</Link></li>
+                            <li><Link href="https://app.pivothire.tech" className="hover:text-white transition-colors">Mobile Development</Link></li>
+                            <li><Link href="https://app.pivothire.tech" className="hover:text-white transition-colors">Cloud Services</Link></li>
+                            <li><Link href="https://app.pivothire.tech" className="hover:text-white transition-colors">Quality Assurance</Link></li>
                         </ul>
                     </div>
 
