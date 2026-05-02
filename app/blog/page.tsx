@@ -15,13 +15,11 @@ export default function BlogPage() {
         <main className="min-h-screen bg-white font-sans selection:bg-[#242424] selection:text-white">
             <Navbar />
             <div className="container mx-auto px-4 pt-32 pb-20">
-                <div className="max-w-3xl mx-auto">
-                    <div className="mb-12">
-                        <h1 className="text-4xl font-bold tracking-tight text-zinc-900 mb-4">Blog</h1>
-                        <p className="text-lg text-zinc-500">Insights and updates from the PivotHire team.</p>
-                    </div>
-                    <BlogList posts={posts.map(({ slug, title, date, excerpt }) => ({ slug, title, date, excerpt }))} />
+                <div className="mb-12">
+                    <h1 className="text-4xl font-bold tracking-tight text-zinc-900 mb-4">Blog</h1>
+                    <p className="text-lg text-zinc-500">Insights and updates from the PivotHire team.</p>
                 </div>
+                <BlogList posts={posts.map(({ slug, title, date, excerpt }) => ({ slug, title, date, excerpt }))} />
             </div>
 
             <div className="bg-white pt-4">

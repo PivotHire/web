@@ -1,7 +1,8 @@
 "use client";
 
 import { FaCode, FaServer, FaMobileAlt, FaPenNib, FaArrowRight } from "react-icons/fa";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
+import { staggerContainer, fadeInUp, premiumEasing } from "@/lib/animations";
 
 const services = [
     {
@@ -30,26 +31,18 @@ const services = [
     },
 ];
 
-const containerVariants = {
-    hidden: {},
-    visible: { transition: { staggerChildren: 0.1 } },
-};
 
-const cardVariants: Variants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-};
 
 export default function Services() {
     return (
-        <section id="services" className="py-24 bg-white">
-            <div className="container mx-auto px-4">
+        <section id="services" className="py-24 bg-white relative overflow-hidden">
+            <div className="container mx-auto px-4 relative">
                 <motion.div
                     className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
                     viewport={{ once: true, amount: 0.2 }}
-                    transition={{ duration: 0.5 }}
                 >
                     <div className="max-w-2xl">
                         <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl mb-4">
@@ -69,7 +62,7 @@ export default function Services() {
 
                 <motion.div
                     className="hidden lg:grid lg:grid-cols-4 gap-4"
-                    variants={containerVariants}
+                    variants={staggerContainer}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.2 }}
@@ -78,9 +71,9 @@ export default function Services() {
                         <motion.a
                             key={service.title}
                             href="https://app.pivothire.tech"
-                            className="group rounded-[20px] bg-zinc-50 p-8 flex flex-col transition-colors duration-300 hover:bg-zinc-200"
-                            variants={cardVariants}
-                            whileHover={{ scale: 1.02 }}
+                            className="group rounded-[20px] glass-card p-8 flex flex-col"
+                            variants={fadeInUp}
+                            whileHover={{ y: -5 }}
                             transition={{ duration: 0.2 }}
                         >
                             <div className="flex items-center gap-3 mb-8">
@@ -103,7 +96,7 @@ export default function Services() {
 
                 <motion.div
                     className="flex flex-col gap-4 lg:hidden"
-                    variants={containerVariants}
+                    variants={staggerContainer}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.1 }}
@@ -112,8 +105,8 @@ export default function Services() {
                         <motion.a
                             key={service.title}
                             href="https://app.pivothire.tech"
-                            className="rounded-[20px] border border-zinc-200 bg-zinc-50 p-7 flex flex-col"
-                            variants={cardVariants}
+                            className="rounded-[20px] glass-card p-7 flex flex-col"
+                            variants={fadeInUp}
                         >
                             <service.icon className="h-7 w-7 mb-3 text-zinc-900" />
                             <h3 className="text-lg font-bold mb-2 text-zinc-900">{service.title}</h3>

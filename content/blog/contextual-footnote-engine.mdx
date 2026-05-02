@@ -1,0 +1,69 @@
+---
+title: "Case Study: Building a Contextual Footnote Engine in 3 Days"
+date: "2026-04-20"
+excerpt: "How we designed and shipped a dynamic sidebar footnote system — with scroll-aware positioning, animated transitions, and responsive behavior — in under 72 hours."
+---
+
+## The Challenge
+
+An academic research group needed a custom component for their publication pages: a **sidebar footnote system** where reference annotations would render alongside the body text at the exact vertical position of their corresponding markers — not stacked at the bottom of the page, but contextually placed so readers never lose their place.
+
+The requirements were precise:
+
+- Footnotes must align vertically with their in-text reference markers
+- Each footnote links to its source (external papers, repositories, datasets)
+- Smooth entrance animations as footnotes scroll into view
+- Graceful degradation on smaller viewports where a sidebar is impractical
+- Performance-safe rendering for pages with 15+ references and heavy media content
+
+The timeline: **three business days** from kickoff to production deployment.
+
+## How It Works
+
+<FootnoteDiagram />
+
+The system operates on a simple but powerful principle: each content section wraps its body and footnotes inside a shared positioning context. The footnotes are absolutely positioned within that context, anchored to the top of their parent section. This means every footnote naturally aligns with the paragraph that references it — without JavaScript-based scroll calculations or manual coordinate mapping.
+
+### Architecture
+
+The component architecture consists of three layers:
+
+1. **Section Wrapper** — A relative-positioned container that holds both the main content and its associated footnotes. Each wrapper defines the positioning context for its children.
+
+2. **Reference Markers** — Small, numbered indicators embedded inline within the body text. These serve as visual anchors and, on interaction, highlight their corresponding footnote in the sidebar.
+
+3. **Footnote Column** — An absolutely positioned sidebar element that renders footnotes at the vertical origin of their parent section. Each footnote contains a numbered badge, a label, and an external link.
+
+### Responsive Behavior
+
+On viewports below the `xl` breakpoint, the sidebar is hidden entirely. Footnotes collapse into inline tooltips or are accessible via marker interaction, ensuring the reading experience remains clean on tablets and mobile devices.
+
+### Animation Layer
+
+Each footnote uses a staggered entrance animation triggered by scroll intersection. When a section enters the viewport, its associated footnotes fade in with a subtle horizontal offset, drawing the reader's eye without disrupting focus. Active reference highlighting uses spring-based transitions for a responsive, tactile feel.
+
+## Technical Decisions
+
+Several architectural choices enabled the aggressive timeline:
+
+**CSS-first positioning over JavaScript scroll tracking.** By using `position: absolute` within `position: relative` containers, we avoided the complexity of scroll event listeners, resize observers, and manual offset calculations. The browser's layout engine handles alignment natively, which is both more performant and more maintainable.
+
+**Tailwind utility classes for responsive breakpoints.** The `hidden xl:block` pattern made responsive behavior trivial — a single class toggles the entire sidebar without conditional rendering logic or media query hooks.
+
+**Framer Motion for declarative animations.** Rather than managing animation state imperatively, we defined entrance and highlight animations as declarative variants. This reduced the animation code to a fraction of what a manual implementation would require.
+
+**Static rendering with client-side interactivity.** The page content renders server-side for SEO and performance, while the footnote highlight interactions hydrate on the client. This hybrid approach keeps initial load fast without sacrificing interactivity.
+
+## Delivery
+
+The project moved from initial scoping call to production deployment in **under 72 hours**:
+
+- **Day 1** — Requirements alignment, component architecture, core positioning logic
+- **Day 2** — Animation system, responsive behavior, edge case handling for long footnotes
+- **Day 3** — Integration testing across browsers, performance profiling, deployment
+
+The final component handles pages with dense reference material — 15 or more footnotes — without layout shifts or performance degradation. It has since been extended to additional publication pages within the same platform.
+
+## Takeaway
+
+Not every project requires a multi-week sprint. When scope is well-defined and the engineering team understands the domain, high-quality, production-grade components can ship in days rather than weeks. The key is disciplined scoping, architectural clarity from the start, and the willingness to lean on platform capabilities (CSS layout, framework animation primitives) rather than building from scratch.

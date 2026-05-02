@@ -36,7 +36,7 @@ export default function BlogList({ posts }: { posts: Post[] }) {
                         className="group flex flex-col md:flex-row md:items-center gap-4 md:gap-8 py-8 transition-colors duration-200 hover:bg-zinc-50 -mx-6 px-6 rounded-2xl"
                     >
                         <time className="text-sm text-zinc-400 md:w-36 shrink-0">
-                            {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+                            {new Date(post.date + "T00:00:00").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
                         </time>
                         <div className="flex-1 min-w-0">
                             <h2 className="text-xl font-bold text-zinc-900 mb-2 group-hover:text-zinc-600 transition-colors duration-200">

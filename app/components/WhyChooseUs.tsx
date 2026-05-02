@@ -1,64 +1,57 @@
 "use client";
 
-import { FaRobot, FaCheckCircle, FaVoteYea, FaGlobe } from "react-icons/fa";
+import { FaShieldAlt, FaRobot, FaFileContract, FaGlobeAmericas } from "react-icons/fa";
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
+import { staggerContainer, fadeInUp, scaleIn } from "@/lib/animations";
 
 const features = [
     {
+        icon: FaShieldAlt,
+        title: "Compliance Corridor",
+        description: "We handle IP assignment, tax forms, payment routing, engineer screening, and classification review — so you don't have to.",
+    },
+    {
         icon: FaRobot,
-        title: "Intelligent Central AI Agent",
-        description: "Our AI agent analyzes project requirements and team capabilities to ensure optimal, data-driven pairings for successful delivery.",
+        title: "Agent-Driven Delivery",
+        description: "AI agents manage code review, timeline tracking, and client communication — eliminating project management overhead entirely.",
     },
     {
-        icon: FaCheckCircle,
-        title: "Verified & Vetted Ecosystem",
-        description: "We conduct rigorous legal verification for clients and multi-stage skill assessments for our delivery partners, creating a high-trust marketplace.",
+        icon: FaFileContract,
+        title: "Engineering-Grade Contracts",
+        description: "Contracts built for software work. Escrow-based payments, refund guarantees for poor outcomes, and clear IP chain for both sides.",
     },
     {
-        icon: FaVoteYea,
-        title: "Ironclad IP Protection",
-        description: "The platform manages binding legal agreements for immutable records, safeguarding your intellectual property.",
-    },
-    {
-        icon: FaGlobe,
-        title: "Borderless Collaboration",
-        description: "Our platform is built for versatility, enabling seamless, project-based work across any industry, role, or region to power global innovation.",
+        icon: FaGlobeAmericas,
+        title: "China–US Talent Pipeline",
+        description: "Access China's top engineering talent — rigorously vetted in ML, AI, and software development — with full US-compliant legal and payment infrastructure.",
     },
 ];
 
-const containerVariants = {
-    hidden: {},
-    visible: { transition: { staggerChildren: 0.1 } },
-};
 
-const cardVariants: Variants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-};
 
 export default function WhyChooseUs() {
     return (
-        <section className="py-24 bg-white">
-            <div className="container mx-auto px-4">
+        <section className="py-24 bg-white relative overflow-hidden">
+            <div className="container mx-auto px-4 relative">
                 <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
 
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        variants={fadeInUp}
+                        initial="hidden"
+                        whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        transition={{ duration: 0.5 }}
                     >
                         <h2 className="mb-6 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
                             Why PivotHire?
                         </h2>
                         <p className="mb-8 text-lg text-zinc-500">
-                            We deliver more than just code. We provide a partnership that guarantees quality, transparency, and results.
+                            Not another freelance platform. We&apos;re cross-border engineering infrastructure — compliance, delivery, and transparency built in from day one.
                         </p>
 
                         <motion.div
                             className="grid gap-6 sm:grid-cols-2"
-                            variants={containerVariants}
+                            variants={staggerContainer}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.2 }}
@@ -66,9 +59,9 @@ export default function WhyChooseUs() {
                             {features.map((feature) => (
                                 <motion.div
                                     key={feature.title}
-                                    className="rounded-3xl border border-zinc-200 bg-zinc-50/50 p-8 transition-colors hover:bg-zinc-100"
-                                    variants={cardVariants}
-                                    whileHover={{ scale: 1.02 }}
+                                    className="rounded-3xl glass-card p-8"
+                                    variants={fadeInUp}
+                                    whileHover={{ y: -5 }}
                                     transition={{ duration: 0.2 }}
                                 >
                                     <feature.icon className="h-8 w-8 text-black mb-4" />
@@ -81,10 +74,10 @@ export default function WhyChooseUs() {
 
                     <motion.div
                         className="relative"
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
+                        variants={scaleIn}
+                        initial="hidden"
+                        whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
                     >
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-4 pt-12">

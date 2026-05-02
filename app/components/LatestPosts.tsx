@@ -30,10 +30,10 @@ export default function LatestPosts() {
                         <Link
                             key={post.slug}
                             href={`/blog/${post.slug}`}
-                            className="group rounded-[20px] bg-white p-8 flex flex-col transition-colors duration-300 hover:bg-zinc-100"
+                            className="group rounded-[20px] glass-card p-8 flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
                         >
                             <time className="text-xs text-zinc-400 mb-3">
-                                {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+                                {new Date(post.date + "T00:00:00").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
                             </time>
                             <h3 className="text-lg font-bold text-zinc-900 mb-3">{post.title}</h3>
                             <p className="text-sm text-zinc-500 leading-relaxed mb-6">{post.excerpt}</p>

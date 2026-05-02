@@ -7,16 +7,16 @@ export default function Footer() {
     return (
         <footer id="contact" className="bg-transparent text-white pt-16 pb-12">
             <div className="container mx-auto px-4 md:px-8">
-                <div className="grid gap-12 lg:grid-cols-3 mb-16">
+                <div className="grid gap-12 lg:grid-cols-4 mb-16">
                     {/* Brand */}
-                    <div className="space-y-4">
+                    <div className="lg:col-span-2 space-y-4">
                         <Link href="/" className="relative block w-48 h-12">
                             <Image
                                 src="/logo-dark-transparent.png" alt="PivotHire Logo" fill
                                 className="object-contain" />
                         </Link>
                         <p className="text-zinc-400">
-                            Connecting the world's best tech talent with ambitious companies.
+                            Accelerate Your Growth with AI-Powered Outsourcing.
                         </p>
                         <div className="flex gap-4">
                             <Link href="https://www.linkedin.com/company/pivothire/" className="h-10 w-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors">
